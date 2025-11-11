@@ -110,71 +110,61 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ==========================
-          ABOUT VIDEO SECTION
-      =========================== */}
-      <section id="about-video">
-        <div className="about-video">
-          <video
-            className="luxury-video"
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster="/images/video-poster.jpg"
-          >
-            <source src="/video/video_01.mp4" type="video/mp4" />
-          </video>
-          <div className="video-overlay"></div>
-        </div>
-      </section>
 
       {/* ==========================
           HOVER IMAGE SECTION
       =========================== */}
-      <section className="home-solutions">
-        <div className="solution-card">
-          <div className="image-container">
-            <Image
-              src="/images/hero_01.jpg"
-              alt="Bath Solutions"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="solution-image"
-            />
-          </div>
+<section className="home-solutions">
+  {/* === BATH SOLUTIONS CARD === */}
+  <div className="solution-card">
+    <div className="image-container">
+      <Image
+        src="/images/hero_01.jpg"
+        alt="Bath Solutions"
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="solution-image"
+      />
+    </div>
 
-          <div className="solution-content">
-            <h2>BATH SOLUTIONS</h2>
-            <p>
-              Aesthetically designed complete bathroom solutions to make your bath
-              space more relaxing & refreshing.
-            </p>
-            <a href="#">Know More →</a>
-          </div>
-        </div>
+    <div className="solution-content">
+      <h2>BATH SOLUTIONS</h2>
+      <p>
+        Aesthetically designed complete bathroom solutions to make your bath
+        space more relaxing & refreshing.
+      </p>
+      <a href="#">Know More →</a>
+    </div>
+  </div>
 
-        <div className="solution-card">
-          <div className="image-container">
-            <Image
-              src="/images/hero_02.png"
-              alt="Light Solutions"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="solution-image"
-            />
-          </div>
+  {/* === GALAXY FAMILY FUN SPA CARD === */}
+  <div className="solution-card">
+    <div className="image-container">
+      <Image
+        src="/images/hero_02.png"
+        alt="Galaxy Family Fun Spa"
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="solution-image"
+      />
+    </div>
 
-          <div className="solution-content">
-            <h2>LIGHT SOLUTIONS</h2>
-            <p>
-              Elegant lighting concepts that bring brilliance, warmth, and modern
-              aesthetics to your interiors.
-            </p>
-            <a href="#">Know More →</a>
-          </div>
-        </div>
-      </section>
+    <div className="solution-content">
+      <h2>Galaxy Family Fun Spa</h2>
+
+
+   
+      <p>
+        Front Panel | Standard Massage system with 6 jets | Spinal 1 Jet |
+        1.5HP imported motor with PN on/off | Coupling Pressure Control Switch |
+    
+      </p>
+
+      <a href="#">Know More →</a>
+    </div>
+  </div>
+</section>
+
 
       {/* ==========================
           PRODUCT SHOWCASE SECTION
@@ -212,6 +202,27 @@ export default function Page() {
     </a>
   </div>
 </section>
+
+
+      {/* ==========================
+          ABOUT VIDEO SECTION
+      =========================== */}
+      <section id="about-video">
+        <div className="about-video">
+          <video
+            className="luxury-video"
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/images/video-poster.jpg"
+          >
+            <source src="/video/video_01.mp4" type="video/mp4" />
+          </video>
+          <div className="video-overlay"></div>
+        </div>
+      </section>
+
 
       {/* ==========================
           CLIENTS SECTION

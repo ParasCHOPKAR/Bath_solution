@@ -11,12 +11,17 @@ export default function Footer() {
           
           {/* ===== About Section ===== */}
           <div className="footer-section about">
-            <img src="/images/LOGO_01.jpg" alt="Bathsolution Logo" className="footer-logo" />
+            <img
+              src="/images/LOGO_01.jpg"
+              alt="Bathsolution Logo"
+              className="footer-logo"
+            />
             <hr className="footer-line" />
             <h3>About</h3>
             <p>
-              Bathsolution, India’s first bathroom renovation company, delivers expert bathroom remodels with
-              premium designs, quality materials, and seamless end-to-end service.
+              Bathsolution is a leading brand offering complete bathroom transformation solutions — 
+              from luxury fittings and innovative spa systems to elegant lighting and accessories. 
+              Our mission is to redefine comfort, style, and functionality for modern living spaces.
             </p>
           </div>
 
@@ -26,23 +31,22 @@ export default function Footer() {
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
+              <li><a href="#">Products</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Blogs</a></li>
-              <li><a href="#">Support</a></li>
             </ul>
           </div>
 
-          {/* ===== Services ===== */}
+          {/* ===== Products ===== */}
           <div className="footer-section">
-            <h3>Services</h3>
+            <h3>Products</h3>
             <ul>
-              <li>Noida</li>
-              <li>Delhi/NCR</li>
-              <li>Dehradun</li>
-              <li>Chandigarh</li>
-              <li>Raipur</li>
-              <li>Kanpur</li>
-              <li>Aligarh</li>
+              <li>Luxury Shower Systems</li>
+              <li>Galaxy Family Fun Spa</li>
+              <li>Designer Basins</li>
+              <li>Elegant Faucets</li>
+              <li>Bath Accessories</li>
+              <li>Lighting Solutions</li>
             </ul>
           </div>
 
@@ -50,9 +54,9 @@ export default function Footer() {
           <div className="footer-section">
             <h3>Get in touch</h3>
             <p>
-              Connect with Bathsolution, India’s first bathroom renovation company, for premium remodel services.
-              We deliver stylish designs, seamless execution, and stress-free bathroom transformations tailored
-              to your lifestyle, needs, and budget.
+              Have a project in mind or need expert advice? 
+              Reach out to our team for tailored solutions and premium-quality bath innovations 
+              that fit your space, lifestyle, and budget perfectly.
             </p>
             <button className="footer-btn">Talk To Our Expert</button>
 
@@ -69,7 +73,9 @@ export default function Footer() {
         <hr className="footer-divider" />
         <div className="footer-bottom">
           <p>© 2025 Bathsolution. All rights reserved.</p>
-          <p>Developed By <span className="dev-name">DW INNOVATION PVT. LTD.</span></p>
+          <p>
+            Developed By <span className="dev-name">DW INNOVATION PVT. LTD.</span>
+          </p>
         </div>
       </div>
     </section>
