@@ -2,7 +2,8 @@ import "./globals.css";
 import "./page.css";
 
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"; // ✅ Import Footer
+import Footer from "../components/Footer";
+import FloatingButtons from "../components/FloatingButtons"; // ✅ Import FloatingButtons
 
 export const metadata = {
   title: "Bath Solution",
@@ -13,9 +14,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <Navbar/>
         <main>{children}</main>
-        <Footer /> {/* ✅ Added Footer here */}
+        <FloatingButtons /> {/* ✅ Floating WhatsApp & Phone Buttons */}
+        <Footer/> {/* ✅ Footer at the bottom */}
       </body>
     </html>
   );
