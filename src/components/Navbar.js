@@ -24,6 +24,7 @@ export default function Navbar() {
   return (
     <>
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+        
         {/* ===== Left Logo ===== */}
         <div className="navbar-logo">
           <Link href="/">
@@ -44,91 +45,79 @@ export default function Navbar() {
               Home
             </Link>
           </li>
+
           <li>
             <Link href="/about" onClick={closeMenu}>
               About
             </Link>
           </li>
 
-          {/* ===== Dropdown Menu ===== */}
+          {/* ===== UPDATED PRODUCT CATEGORY DROPDOWN ===== */}
           <li
             className={`dropdown ${dropdownOpen ? "open" : ""}`}
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
-            <button
-              className="dropdown-btn"
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-            >
-              Products
-              <span className={`arrow ${dropdownOpen ? "rotate" : ""}`}>
-                ▼
-              </span>
-            </button>
+     <Link
+  href="/product"
+  className="dropdown-btn"
+  onClick={() => {
+    setDropdownOpen(!dropdownOpen);
+    closeMenu();
+  }}
+>
+  Product Category
+  <span className={`arrow ${dropdownOpen ? "rotate" : ""}`}>
+    ▼
+  </span>
+</Link>
+
 
             <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
+
               <li>
-                <Link href="/products/galaxy-hot-spa" onClick={closeMenu}>
-                  Galaxy Hot Spa
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/galaxy-round-spa" onClick={closeMenu}>
-                  Galaxy Round Spa
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/seagull-w" onClick={closeMenu}>
-                  Seagull W
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/oscar" onClick={closeMenu}>
-                  Oscar
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/lancer" onClick={closeMenu}>
-                  Lancer
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/oscar-deluxe" onClick={closeMenu}>
-                  Oscar Deluxe
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/elanza" onClick={closeMenu}>
-                  Elanza
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/turbo-xl-deluxe" onClick={closeMenu}>
-                  Turbo XL Deluxe
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/rossette" onClick={closeMenu}>
-                  Rossette
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/utility" onClick={closeMenu}>
-                  Utility
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/regular" onClick={closeMenu}>
-                  Regular
-                </Link>
-              </li>
-              <li>
-                <Link href="/products/caesar" onClick={closeMenu}>
-                  Caesar
+                <Link href="/products/bathtub" onClick={closeMenu}>
+                  BathTub
                 </Link>
               </li>
 
-              {/* ===== View All Products ===== */}
+              <li>
+                <Link href="/products/spa-bathtub" onClick={closeMenu}>
+                  Spa Bathtub
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/products/massage-bathtub" onClick={closeMenu}>
+                  Massage Bathtub
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/products/steam-bathtub" onClick={closeMenu}>
+                  Steam Bathtub
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/products/sauna-bathtub" onClick={closeMenu}>
+                  Sauna Bathtub
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/products/pressure-pump" onClick={closeMenu}>
+                  Pressure Pump
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/products/glass-partition-cubicle" onClick={closeMenu}>
+                  Glass Partition Cubicle
+                </Link>
+              </li>
+
+              {/* View All */}
               <li className="view-all">
                 <Link href="/products" onClick={closeMenu}>
                   View All Products →
@@ -152,7 +141,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* ===== Hamburger for Mobile ===== */}
+        {/* ===== Mobile Hamburger ===== */}
         <div
           className={`hamburger ${menuActive ? "active" : ""}`}
           onClick={toggleMenu}
@@ -163,7 +152,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* ===== Overlay for Mobile ===== */}
+      {/* ===== Overlay ===== */}
       <div
         className={`overlay ${menuActive ? "show" : ""}`}
         onClick={closeMenu}

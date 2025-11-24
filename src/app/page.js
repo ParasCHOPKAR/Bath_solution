@@ -1,22 +1,23 @@
-"use client"; // must always be the first line
+"use client";
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import "./page.css";
-import styles from "./page.module.css"; // CSS Module for Bath Solutions section
+import styles from "./page.module.css"; // CSS module for Bath Solutions section
+import Loader from "@/components/Loader";
+
 
 export default function Page() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [current, setCurrent] = useState(0);
 
-  // ================= HERO SLIDER IMAGES =================
+  /* ================= HERO SLIDER IMAGES ================= */
   const heroImages = [
-    "/images/hero_01.jpg",
-    "/images/hero_02.png",
-    "/images/about_02.jpg",
+    "/images/hero/hero_022.png",
+ "/images/hero/hero_06.jpg",
+    "/images/hero/hero_05.jpg",
   ];
 
-  // Auto slide every 5 seconds
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % heroImages.length);
@@ -24,69 +25,91 @@ export default function Page() {
     return () => clearInterval(timer);
   }, [heroImages.length]);
 
-  const goToSlide = (index) => setCurrent(index);
   const prevSlide = () =>
     setCurrent((prev) => (prev === 0 ? heroImages.length - 1 : prev - 1));
+
   const nextSlide = () =>
     setCurrent((prev) => (prev + 1) % heroImages.length);
 
-  // ================= ACCORDION ITEMS =================
+  const goToSlide = (index) => setCurrent(index);
+  // 👉 Add default image here
+  const defaultImage = "/images/hero/about_01.jpg";
+
+  /* ================= ACCORDION ITEMS ================= */
   const items = [
     {
       title: "Premium Bathroom Designs",
       content:
         "We craft modern and luxurious bathroom interiors tailored to your space and lifestyle. Every design ensures elegance, comfort, and functionality.",
-  image: "/images/about_03.jpg",
+      image: "/images/hero/about_01.jpg",
     },
+    
     {
       title: "High-Quality Fixtures",
       content:
         "Choose from a curated selection of top-tier fittings and fixtures that guarantee durability, water efficiency, and timeless appeal.",
-      image: "/images/about_01.jpg",
+      image: "/images/hero/about_02.jpg",
     },
     {
       title: "End-to-End Installation",
       content:
         "Our experts handle everything from plumbing to tiling, ensuring a hassle-free and perfectly executed bathroom transformation.",
-      image: "/images/about_02.jpg",
+      image: "/images/hero/section_2_1.jpg",
     },
     {
       title: "Warranty & Support",
       content:
         "Enjoy peace of mind with our service warranty and reliable after-sales support for maintenance and upgrades.",
-      image: "/images/about_03.jpg",
+      image: "/images/hero/hero_06.jpg",
     },
   ];
 
-  // ================= PRODUCT CARDS =================
-  const products = [
-    {
-      id: 1,
-      title: "Luxury Bath Tubs",
-      desc: "Experience ultimate relaxation with our premium acrylic whirlpool and spa bathtubs.",
-      img: "/images/about_03.jpg",
-    },
-    {
-      id: 2,
-      title: "Steam & Sauna Systems",
-      desc: "Transform your home into a rejuvenating wellness retreat with advanced steam technology.",
-      img: "/images/about_02.jpg",
-    },
-    {
-      id: 3,
-      title: "Rain Showers & Panels",
-      desc: "Immerse yourself in a luxurious shower experience with our smart rain panels.",
-      img: "/images/about_03.jpg",
-    },
-    {
-      id: 4,
-      title: "Smart Toilets & Accessories",
-      desc: "Upgrade your bathroom with our elegant, automated hygiene systems.",
-      img: "/images/about_02.jpg",
-    },
-  ];
+ /* ================= PRODUCT LIST ================= */
+const products = [
+  {
+    id: 1,
+    title: "BathTub",
+    desc: "Premium quality bathtubs designed for comfort, durability and a luxurious bathing experience.",
+    img: "/images/hero/pro_bath.jpg",
+  },
+  {
+    id: 2,
+    title: "Spa Bathtub",
+    desc: "Relaxing spa bathtubs with massage jets for a soothing and rejuvenating experience.",
+    img: "/images/hero/pro_spa_bath.jpg",
+  },
+  {
+    id: 3,
+    title: "Massage Bathtub",
+    desc: "Advanced hydro-massage bathtubs engineered for full-body therapeutic relaxation.",
+    img: "/images/hero/pro_03.jpg",
+  },
+  {
+    id: 4,
+    title: "Steam Bathtub",
+    desc: "Modern steam bathtub systems that combine heat therapy with luxury bathing.",
+    img: "/images/hero/steam_bath.jpg",
+  },
 
-  // ================= FADE-IN EFFECT =================
+
+];
+
+  /* ================= ABOUT SLIDER (FADE) ================= */
+  useEffect(() => {
+    const images = document.querySelectorAll(".fade-image");
+    let index = 0;
+
+    const changeImage = () => {
+      images.forEach((img) => img.classList.remove("active"));
+      images[index].classList.add("active");
+      index = (index + 1) % images.length;
+    };
+
+    const interval = setInterval(changeImage, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
+  /* ================= FADE-IN EFFECT ================= */
   useEffect(() => {
     const sections = document.querySelectorAll(".product-section");
     const observer = new IntersectionObserver(
@@ -103,9 +126,11 @@ export default function Page() {
 
   return (
     <>
-      {/* ========================== HERO SECTION (Slider) =========================== */}
+
+
+        <Loader />  {/* ← Always at very top */}
+      {/* ========================== HERO SECTION =========================== */}
       <section className="hero">
-        {/* Background Slides */}
         {heroImages.map((img, index) => (
           <div
             key={index}
@@ -116,7 +141,6 @@ export default function Page() {
 
         <div className="hero-overlay"></div>
 
-        {/* Hero Content */}
         <div className="hero-content">
           <h1>
             Redefine <span className="gold-text">Luxury</span> in Every Bath
@@ -136,7 +160,6 @@ export default function Page() {
           </div>
         </div>
 
-        {/* Arrows */}
         <button className="hero-arrow left" onClick={prevSlide}>
           &#10094;
         </button>
@@ -144,7 +167,6 @@ export default function Page() {
           &#10095;
         </button>
 
-        {/* Dots */}
         <div className="hero-dots">
           {heroImages.map((_, index) => (
             <span
@@ -156,21 +178,26 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ========================== ABOUT US SECTION =========================== */}
+      {/* ========================== ABOUT US (FADE SLIDER) =========================== */}
       <section className="about-section" id="about">
         <div className="about-wrapper">
           <div className="about-left">
             <h2 className="about-title">About Us</h2>
+
             <p className="about-text">
-              Galaxy Bath Solution was formed in 2012 with the brand Coral range
-              of bathtubs, whirlpool massage jets, and steam sauna systems. Our
-              expertise ensures every product transforms your bath into a luxury
-              spa experience that enhances your mood and pleasure.
+              Galaxy Bath Solution, established in 2012, began with a strong
+              focus on premium <b>Bath Tubs</b> — our flagship and most trusted
+              product category. Over the years, we have expanded into
+              high-quality spa bathtubs, whirlpool massage systems, steam and
+              sauna solutions, and advanced bathing technology.
             </p>
+
             <p className="about-text">
-              Galaxy Bath Solution is revolutionizing bathrooms and is all set
-              to become a household name soon.
+              With innovation at the core, Galaxy Bath Solution is redefining
+              modern bathrooms and becoming a preferred name for luxury bathing
+              across the country.
             </p>
+
             <a href="#about-video" className="btn btn-gold about-btn">
               Learn More
             </a>
@@ -178,12 +205,26 @@ export default function Page() {
 
           <div className="about-right">
             <div className="about-slider">
-              <div className="slider-track">
-                <img src="/images/hero_02.png" alt="Luxury Bathtub" />
-                <img src="/images/hero_02.png" alt="Modern Spa" />
-                <img src="/images/hero_02.png" alt="Steam Sauna" />
-                <img src="/images/hero_02.png" alt="Whirlpool Tub" />
-              </div>
+              <img
+                src="/images/hero/about_01.jpg"
+                className="fade-image active"
+                alt="Bath Tub"
+              />
+              <img
+                src="/images/hero/about_02.jpg"
+                className="fade-image"
+                alt="Spa"
+              />
+              <img
+                src="/images/hero/about_03.jpg"
+                className="fade-image"
+                alt="Steam Sauna"
+              />
+              <img
+                src="/images/about_02.jpg"
+                className="fade-image"
+                alt="Whirlpool"
+              />
             </div>
           </div>
         </div>
@@ -194,10 +235,9 @@ export default function Page() {
         <div className="solution-card">
           <div className="image-container">
             <Image
-              src="/images/hero_01.jpg"
+       src="/images/hero/section_2_1.jpg"
               alt="Bath Solutions"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
               className="solution-image"
             />
           </div>
@@ -215,10 +255,9 @@ export default function Page() {
         <div className="solution-card">
           <div className="image-container">
             <Image
-              src="/images/hero_02.png"
-              alt="Galaxy Family Fun Spa"
+                 src="/images/hero/section_2_3.jpg"
+              alt="Family Fun Spa"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
               className="solution-image"
             />
           </div>
@@ -226,49 +265,64 @@ export default function Page() {
           <div className="solution-content">
             <h2>Galaxy Family Fun Spa</h2>
             <p>
-              Front Panel | Standard Massage system with 6 jets | Spinal 1 Jet |
-              1.5HP imported motor with PN on/off | Coupling Pressure Control
-              Switch |
+              Front Panel | Standard Massage system | Imported motor |
+              Pressure Control Switch |
             </p>
             <a href="#">Know More →</a>
           </div>
         </div>
       </section>
 
-      {/* ========================== PRODUCTS SECTION =========================== */}
-<section id="products" className="products-wrapper">
-  <h2 className="products-title">Our Premium Products</h2>
 
-  <div className="products-grid">
-    {products.map((item) => (
-      <div key={item.id} className="product-card">
-        <div className="product-image">
-          <Image
-            src={item.img}
-            alt={item.title}
-            width={400}
-            height={250}
-            style={{ width: "100%", height: "auto" }}
-          />
+
+
+
+
+      {/* ========================== PRODUCTS =========================== */}
+      <section id="products" className="products-wrapper">
+        <h2 className="products-title">Our Premium Products</h2>
+
+        <div className="products-grid">
+          {products.map((item) => (
+            <div key={item.id} className="product-card">
+              <div className="product-image">
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  width={400}
+                  height={250}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </div>
+
+              <div className="product-info">
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+                <a href="#" className="learn-btn">
+                  Learn More →
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
 
-        <div className="product-info">
-          <h3>{item.title}</h3>
-          <p>{item.desc}</p>
-          <a href="#" className="learn-btn">
-            Learn More →
+        <div className="view-all">
+          <a href="#all-products" className="view-all-btn">
+            View All Products
           </a>
         </div>
-      </div>
-    ))}
-  </div>
+      </section>
 
-  <div className="view-all">
-    <a href="#all-products" className="view-all-btn">
-      View All Products
-    </a>
-  </div>
-</section>
+
+
+
+
+
+
+
+
+
+
 
 
       {/* ========================== VIDEO SECTION =========================== */}
@@ -287,6 +341,10 @@ export default function Page() {
           <div className="video-overlay"></div>
         </div>
       </section>
+
+
+
+
 
       {/* ========================== BATH SOLUTIONS (ACCORDION) =========================== */}
       <section className={styles.valuesSection}>
@@ -325,17 +383,18 @@ export default function Page() {
             </div>
           </div>
 
-          <div className={styles.right}>
-            <img
-              src={items[activeIndex]?.image}
-              alt={items[activeIndex]?.title}
-              className={styles.image}
-            />
-          </div>
+    <div className={styles.right}>
+  <img
+    src={activeIndex !== null ? items[activeIndex].image : defaultImage}
+    alt={activeIndex !== null ? items[activeIndex].title : "Bath Solutions"}
+    className={styles.image}
+  />
+</div>
+
         </div>
       </section>
 
-      {/* ========================== CLIENTS SECTION =========================== */}
+      {/* ========================== CLIENTS =========================== */}
       <section className="clients-section" id="clients">
         <div className="clients-container">
           <h2 className="clients-title">Our Esteemed Clients</h2>

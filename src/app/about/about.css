@@ -9,7 +9,7 @@
 }
 .about-hero {
   position: relative;
-  height: 80vh; /* full viewport height */
+  height: 70vh; /* full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,10 +43,21 @@
   border-radius: 3px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* =================== HERO =================== */
 .about-hero {
   position: relative;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,13 +68,20 @@
 .hero-image {
   object-fit: cover;
   z-index: 1;
-  filter: brightness(0.5) contrast(1.2);
+  
+  /* FIX: make image more visible */
+  filter: brightness(0.85) contrast(1.05);
 }
 
+/* FIX: reduce overlay darkness */
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1), rgba(0, 0, 0, 0.8));
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 215, 0, 0.05),
+    rgba(0, 0, 0, 0.45)
+  );
   z-index: 2;
 }
 
@@ -84,10 +102,18 @@
 
 .hero-content p {
   font-size: 1.3rem;
-  color: #ddd;
+  color: #eee;
   line-height: 1.7;
-  opacity: 0.9;
+  opacity: 0.95;
 }
+
+
+
+
+
+
+
+
 
 /* =================== STORY =================== */
 /* ===== About Story Section ===== */

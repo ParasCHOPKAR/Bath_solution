@@ -33,7 +33,7 @@ export default function About() {
       {/* === HERO SECTION === */}
       <section className="about-hero">
         <Image
-          src="/images/about_01.jpg"
+          src="/images/hero/about_hero.png"
           alt="About Galaxy Bath Solutions"
           fill
           className="hero-image"
@@ -97,9 +97,9 @@ export default function About() {
 
             {/* Image Content */}
 <div className="story-image">
-  <Image src="/images/about_02.jpg" alt="Luxury Bath" width={400} height={300} />
-  <Image src="/images/about_02.jpg" alt="Steam Room" width={400} height={300} />
-  <Image src="/images/about_02.jpg" alt="Modern Bathroom" width={800} height={500} />
+  <Image src="/images/hero/hero_06.jpg" alt="Luxury Bath" width={400} height={300} />
+  <Image src="/images/hero/hero_022.png" alt="Steam Room" width={400} height={300} />
+  <Image src="/images/hero/section_2_3.jpg" alt="Modern Bathroom" width={800} height={500} />
 </div>
 
           </div>
