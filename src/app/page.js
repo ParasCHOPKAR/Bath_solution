@@ -298,7 +298,7 @@ const products = [
               <div className="product-info">
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
-                <a href="#" className="learn-btn">
+                <a href="/product" className="learn-btn">
                   Learn More →
                 </a>
               </div>
@@ -307,7 +307,7 @@ const products = [
         </div>
 
         <div className="view-all">
-          <a href="#all-products" className="view-all-btn">
+          <a href="/product" className="view-all-btn">
             View All Products
           </a>
         </div>

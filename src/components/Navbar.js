@@ -10,6 +10,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => setMenuActive(!menuActive);
+
   const closeMenu = () => {
     setMenuActive(false);
     setDropdownOpen(false);
@@ -24,7 +25,7 @@ export default function Navbar() {
   return (
     <>
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
-        
+
         {/* ===== Left Logo ===== */}
         <div className="navbar-logo">
           <Link href="/">
@@ -52,74 +53,73 @@ export default function Navbar() {
             </Link>
           </li>
 
-          {/* ===== UPDATED PRODUCT CATEGORY DROPDOWN ===== */}
+          {/* ===== PRODUCT CATEGORY DROPDOWN ===== */}
           <li
             className={`dropdown ${dropdownOpen ? "open" : ""}`}
             onMouseEnter={() => setDropdownOpen(true)}
             onMouseLeave={() => setDropdownOpen(false)}
           >
-     <Link
-  href="/product"
-  className="dropdown-btn"
-  onClick={() => {
-    setDropdownOpen(!dropdownOpen);
-    closeMenu();
-  }}
->
-  Product Category
-  <span className={`arrow ${dropdownOpen ? "rotate" : ""}`}>
-    ▼
-  </span>
-</Link>
-
+            <Link
+              href="/product"
+              className="dropdown-btn"
+              onClick={() => {
+                setDropdownOpen(!dropdownOpen);
+                closeMenu();
+              }}
+            >
+              Product Category
+              <span className={`arrow ${dropdownOpen ? "rotate" : ""}`}>
+                ▼
+              </span>
+            </Link>
 
             <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
 
               <li>
-                <Link href="/products/bathtub" onClick={closeMenu}>
+                <Link href="/product" onClick={closeMenu}>
                   BathTub
                 </Link>
               </li>
 
               <li>
-                <Link href="/products/spa-bathtub" onClick={closeMenu}>
+                <Link href="/product" onClick={closeMenu}>
                   Spa Bathtub
                 </Link>
               </li>
 
               <li>
-                <Link href="/products/massage-bathtub" onClick={closeMenu}>
+                <Link href="/product" onClick={closeMenu}>
                   Massage Bathtub
                 </Link>
               </li>
 
               <li>
-                <Link href="/products/steam-bathtub" onClick={closeMenu}>
+                <Link href="/product" onClick={closeMenu}>
                   Steam Bathtub
                 </Link>
               </li>
 
               <li>
-                <Link href="/products/sauna-bathtub" onClick={closeMenu}>
+                <Link href="/product" onClick={closeMenu}>
                   Sauna Bathtub
                 </Link>
               </li>
 
               <li>
-                <Link href="/products/pressure-pump" onClick={closeMenu}>
+                <Link href="/product" onClick={closeMenu}>
                   Pressure Pump
                 </Link>
               </li>
 
               <li>
-                <Link href="/products/glass-partition-cubicle" onClick={closeMenu}>
+                <Link href="/product" onClick={closeMenu}>
                   Glass Partition Cubicle
                 </Link>
               </li>
 
               {/* View All */}
               <li className="view-all">
-                <Link href="/products" onClick={closeMenu}>
+                <Link href="/product" onClick={closeMenu}>
                   View All Products →
                 </Link>
               </li>
