@@ -5,688 +5,293 @@ import "./page.css";
 export default function ProductsPage() {
   const [activeCategory, setActiveCategory] = useState(null);
 
-/* ================= PRODUCT CATEGORIES (FINAL & CLEAN) ================= */
-/* This file is split into 5 readable parts with full structured + raw details (Option C). */
-/* PART 1 of 5: Bath Tubs — Galaxy Series (first half) */
-const productCategories = [
-  {
-    category: "Bath Tubs",
-    subProducts: [
-      {
-        name: "Galaxy Regular",
-        sizes: [
-          "1215 x 1830 x 700 mm",
-          "980 x 1820 x 540 mm",
-          "910 x 1680 x 540 mm",
-          "1680 x 760 x 540 mm",
-          "1520 x 760 x 500 mm",
-        ],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 01 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: [
-          "Bubble Bath System",
-          "Air Blower 400w",
-          "12 Bubble Jets"
-        ],
-        faucetSets: [
-          "Hot & Cold mixer",
-          "Multiflow Hand Shower",
-          "Waterfall Spout",
-          "Online Heaters (3kw)"
-        ],
-        fullDetails: `Galaxy Regular
-Size(s): 1215 x 1830 x 700 mm; 980 x 1820 x 540 mm; 910 x 1680 x 540 mm; 1680 x 760 x 540 mm; 1520 x 760 x 500 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 01 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-FAUCET SETS: Hot & Cold mixer, Multiflow Hand Shower, Waterfall Spout, Online Heaters (3kw)
-`,
-        img: "/all_products/Galaxy_Regular.jpg",
-      },
+  /* ================= PRODUCT CATEGORIES (ALL PARTS) ================= */
+  const productCategories = [
+    /* PART 1 */
+    {
+      category: "Bath Tubs",
+      subProducts: [
+        {
+          name: "Galaxy Regular",
+          img: "/all_products/Galaxy_Regular.jpg",
+          link: "/products/galaxy-regular",
+        },
+        {
+          name: "Galaxy Standard",
+          img: "/all_products/Galaxy_Standard.jpg",
+          link: "/products/galaxy-standard",
+        },
+        {
+          name: "Galaxy Valio",
+          img: "/all_products/Galaxy_Valio.jpg",
+          link: "/products/galaxy-valio",
+        },
+        {
+          name: "Galaxy Elanza",
+          img: "/all_products/Galaxy_Elanza.jpg",
+          link: "/products/galaxy-elanza",
+        },
+      ],
+    },
 
-      {
-        name: "Galaxy Standard",
-        sizes: ["1675 x 760 x 500 mm"],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 01 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: [
-          "Bubble Bath System",
-          "Air Blower 400w",
-          "12 Bubble Jets"
-        ],
-        faucetSets: [
-          "Hot & Cold mixer",
-          "Multiflow Hand Shower",
-          "Waterfall Spout",
-          "Online Heaters (3kw)"
-        ],
-        fullDetails: `Galaxy Standard
-Size: 1675 x 760 x 500 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 01 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-FAUCET SETS: Hot & Cold mixer, Multiflow Hand Shower, Waterfall Spout, Online Heaters (3kw)
-`,
-        img: "/all_products/Galaxy_Standard.jpg",
-      },
+    /* PART 2 */
+    {
+      category: "Bath Tubs (continued)",
+      subProducts: [
+        {
+          name: "Galaxy Utiliti",
+          img: "/all_products/spa/Galaxy_Utiliti.jpg",
+          link: "/products/galaxy-utiliti",
+        },
+        {
+          name: "Galaxy Caesar",
+          img: "/all_products/spa/Galaxy_Caesar.jpg",
+          link: "/products/galaxy-caesar",
+        },
 
-      {
-        name: "Galaxy Valio",
-        sizes: ["1680 x 760 x 540 mm"],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 01 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: [
-          "Bubble Bath System",
-          "Air Blower 400w",
-          "12 Bubble Jets"
-        ],
-        faucetSets: ["Hot & Cold mixer","Multiflow Hand Shower","Waterfall Spout","Online Heaters (3kw)"],
-        fullDetails: `Galaxy Valio
-Size: 1680 x 760 x 540 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 01 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-FAUCET SETS: Hot & Cold mixer, Multiflow Hand Shower, Waterfall Spout, Online Heaters (3kw)
-`,
-        img: "/all_products/Galaxy_Valio.jpg",
-      },
+        /* SPA BATHTUBS — Galaxy Hot Spa Series */
+        {
+          name: "Galaxy Hot Spa",
+          img: "/all_products/spa/Galaxy_Hot_Spa.jpg",
+          link: "/products/galaxy-hot-spa",
+          desc: "Premium hot spa system",
+        },
+        {
+          name: "Galaxy Round Spa",
+          img: "/all_products/spa/Galaxy_Round_Spa.jpg",
+          link: "/products/galaxy-round-spa",
+        },
+      ],
+    },
 
-      {
-        name: "Galaxy Elanza",
-        sizes: [
-          "900 x 1810 x 540 mm",
-          "1500 x 1820 x 900 x 550 mm",
-          "1350 x 750 x 550 mm",
-        ],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 01 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: [
-          "Bubble Bath System",
-          "Air Blower 400w",
-          "12 Bubble Jets"
-        ],
-        faucetSets: [
-          "Hot & Cold mixer",
-          "Multiflow Hand Shower",
-          "Waterfall Spout",
-          "Online Heaters (3kw)"
-        ],
-        fullDetails: `Galaxy Elanza
-Sizes: 900 x 1810 x 540 mm; 1500 x 1820 x 900 x 550 mm; 1350 x 750 x 550 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 01 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-FAUCET SETS: Hot & Cold mixer, Multiflow Hand Shower, Waterfall Spout, Online Heaters (3kw)
-`,
-        img: "/all_products/Galaxy_Elanza.jpg",
-      },
-    ],
-  },
+    /* PART 3 */
+    {
+      category: "Spa Bathtubs (continued)",
+      subProducts: [
+        {
+          name: "Galaxy Turbo XL Deluxe",
+          img: "/all_products/Spa_Bathtubs/Galaxy_Turbo_XL_Deluxe.jpg",
+          link: "/products/galaxy-turbo-xl-deluxe",
+        },
+        {
+          name: "Galaxy Turbo Classic",
+          img: "/all_products/Spa_Bathtubs/Galaxy_Turbo_Classic.jpg",
+          link: "/products/galaxy-turbo-classic",
+        },
+        {
+          name: "Galaxy Turbo",
+          img: "/all_products/Spa_Bathtubs/Galaxy_Turbo.jpg",
+          link: "/products/galaxy-turbo",
+        },
+        {
+          name: "Galaxy Rossette",
+          img: "/all_products/Spa_Bathtubs/Galaxy_Rossette.jpg",
+          link: "/products/galaxy-rossette",
+        },
+        {
+          name: "Galaxy Spacio",
+          img: "/all_products/Spa_Bathtubs/Galaxy_Spacio.jpg",
+          link: "/products/galaxy-spacio",
+        },
+      ],
+    },
 
-/* PART 2 of 5: Bath Tubs — Galaxy Series (second half) + start Spa Bathtubs */
-  {
-    category: "Bath Tubs (continued)",
-    subProducts: [
-      {
-        name: "Galaxy Utiliti",
-        sizes: ["910 x 1815 x 540 mm"],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 02 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        faucetSets: ["Hot & Cold mixer","Multiflow Hand Shower","Waterfall Spout","Online Heaters (3kw)"],
-        fullDetails: `Galaxy Utiliti
-Size: 910 x 1815 x 540 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 02 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-FAUCET SETS: Hot & Cold mixer, Multiflow Hand Shower, Waterfall Spout, Online Heaters (3kw)
-`,
-        img: "/all_products/spa/Galaxy_Utiliti.jpg",
-      },
+    /* PART 4 */
+    {
+      category: "Massage Bathtubs",
+      subProducts: [
+        {
+          name: "Galaxy Seagull W",
+          img: "/all_products/Massage_Bathtubs/Galaxy-Seagull-W.jpg",
+          link: "/products/galaxy-seagull-w",
+        },
+        {
+          name: "Galaxy Oscar",
+          img: "/all_products/Massage_Bathtubs/Galaxy-Oscar.jpg",
+          link: "/products/galaxy-oscar",
+        },
+        {
+          name: "Galaxy Oscar Deluxe",
+          img: "/all_products/Massage_Bathtubs/Galaxy-Oscar-Deluxe.jpg",
+          link: "/products/galaxy-oscar-deluxe",
+        },
+        {
+          name: "Galaxy Lancer",
+          img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg",
+          link: "/products/galaxy-lancer",
+        },
+        {
+          name: "Galaxy Smart Round",
+          img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg",
+          link: "/products/galaxy-smart-round",
+        },
+      ],
+    },
 
-      {
-        name: "Galaxy Caesar",
-        sizes: ["980 x 1820 x 540 mm", "910 x 1680 x 540 mm"],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 01 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        faucetSets: ["Hot & Cold mixer","Multiflow Hand Shower","Waterfall Spout","Online Heaters (3kw)"],
-        fullDetails: `Galaxy Caesar
-Sizes: 980 x 1820 x 540 mm; 910 x 1680 x 540 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 01 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-FAUCET SETS: Hot & Cold mixer, Multiflow Hand Shower, Waterfall Spout, Online Heaters (3kw)
-`,
-        img: "/all_products/spa/Galaxy_Caesar.jpg",
-      },
+    /* Steam Bathtubs */
+    {
+      category: "Steam Bathtubs",
+      subProducts: [
+        {
+          name: "Galaxy Round Spa (Steam-capable)",
+          img: "/all_products/Spa_Bathtubs.jpg",
+          link: "/products/galaxy-round-spa-steam",
+        },
+        {
+          name: "Galaxy Spa Range (All Models)",
+          img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg",
+          link: "/products/galaxy-spa-range",
+        },
+        {
+          name: "Galaxy Lancer Series",
+          img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg",
+          link: "/products/galaxy-lancer-series",
+        },
+        {
+          name: "Galaxy Oscar Series",
+          img: "/all_products/Massage_Bathtubs/Galaxy-Oscar-Deluxe.jpg",
+          link: "/products/galaxy-oscar-series",
+        },
+        {
+          name: "Galaxy Seagull W (Steam-capable)",
+          img: "/all_products/Massage_Bathtubs/Galaxy-Seagull-W.jpg",
+          link: "/products/galaxy-seagull-w-steam",
+        },
+        {
+          name: "Galaxy Smart Round (Steam-capable)",
+          img: "/all_products/spa/Galaxy_Round_Spa.jpg",
+          link: "/products/galaxy-smart-round-steam",
+        },
+        {
+          name: "Galaxy Turbo Series (Steam-capable)",
+          img: "/all_products/spa/Galaxy_Utiliti.jpg",
+          link: "/products/galaxy-turbo-series",
+        },
+        {
+          name: "Galaxy Ocean Round",
+          img: "/all_products/Galaxy_Standard.jpg",
+          link: "/products/galaxy-ocean-round",
+        },
+        {
+          name: "Galaxy Verona Round",
+          img: "/all_products/Spa_Bathtubs.jpg",
+          link: "/products/galaxy-verona-round",
+        },
+        {
+          name: "Galaxy Classic",
+          img: "/all_products/Galaxy_Regular.jpg",
+          link: "/products/galaxy-classic",
+        },
+      ],
+    },
 
-      /* ===========================================
-         SPA BATHTUBS — Galaxy Hot Spa Series
-      ============================================ */
-      {
-        name: "Galaxy Hot Spa",
-        desc: "Premium hot spa system",
-        material: "Acrylic (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 04 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: [
-          "Bubble Bath System",
-          "Air Blower 400w",
-          "12 Bubble Jets",
-          "LED TV",
-          "Online Heaters (3kw)"
-        ],
-        faucetSets: ["Hot & Cold mixer","Multiflow Hand Shower","Waterfall Spout"],
-        fullDetails: `Galaxy Hot Spa
-Material: Acrylic (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 04 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-FAUCET SETS: Hot & Cold mixer, Multiflow Hand Shower, Waterfall Spout, Online Heaters (3kw), LED TV
-`,
-        img: "/all_products/spa/Galaxy_Hot_Spa.jpg",
-      },
+    /* PART 5: Sauna, Pumps, Glass Partitions */
+    {
+      category: "Sauna Bathtubs",
+      subProducts: [
+     
+        {
+          name: "Galaxy Round Spa (Sauna-capable)",
+          img: "/all_products/spa/Galaxy_Round_Spa.jpg",
+          link: "/products/galaxy-round-spa-sauna",
+        },
+        {
+          name: "Galaxy Turbo XL Deluxe (Sauna-capable)",
+          img: "/all_products/Galaxy_Standard.jpg",
+          link: "/products/galaxy-turbo-xl-deluxe-sauna",
+        },
+        {
+          name: "Galaxy Turbo Classic (Sauna-capable)",
+          img: "/all_products/Massage_Bathtubs/Galaxy-Oscar-Deluxe.jpg",
+          link: "/products/galaxy-turbo-classic-sauna",
+        },
+        {
+          name: "Galaxy Lancer Series (Sauna-capable)",
+          img: "/all_products/Galaxy_Standard.jpg",
+          link: "/products/galaxy-lancer-serie-sauna",
+        },
+        {
+          name: "Galaxy Maderia",
+          img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg",
+          link: "/products/galaxy-maderia",
+        },
 
-      {
-        name: "Galaxy Round Spa",
-        sizes: ["1800 x 1050 mm"],
-        material: "Acrylic (PMMA)",
-        color: "White",
-        features: ["Standard Massage, 6 Jets", "Underwater Light"],
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 04 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        faucetSets: ["Hot & Cold mixer","Multiflow Hand Shower","Waterfall Spout","Online Heaters (3kw)"],
-        fullDetails: `Galaxy Round Spa
-Size: 1800 x 1050 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 04 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-FAUCET SETS: Hot & Cold mixer, Multiflow Hand Shower, Waterfall Spout, Online Heaters (3kw), LED TV
-`,
-        img: "/all_products/spa/Galaxy_Round_Spa.jpg",
-      },
-    ],
-  },
+        {
+          name: "Galaxy Classic (Sauna-capable)",
+          img: "/all_products/spa/Galaxy_Hot_Spa.jpg",
+          link: "/products/galaxy-classic-sauna",
+        },
+      ],
+    },
 
-/* PART 3 of 5: Spa Bathtubs continued + Massage Bathtubs */
-  {
-    category: "Spa Bathtubs (continued)",
-    subProducts: [
-      {
-        name: "Galaxy Turbo XL Deluxe",
-        sizes: ["1525 x 1525 x 570 mm"],
-        material: "Acrylic (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 04 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        fullDetails: `Galaxy Turbo XL Deluxe
-Size: 1525 x 1525 x 570 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 04 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-`,
-        img: "/all_products/Spa_Bathtubs/Galaxy_Turbo_XL_Deluxe.jpg",
-      },
+    {
+      category: "Pressure Pump",
+      subProducts: [
+       /* GX SERIES - Correct Paths */
+    { name: "GXM001", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", link: "/products/gx-series/gxm001" },
+    { name: "GXM001S", img: "/all_products/Spa_Bathtubs.jpg", link: "/products/gx-series/gxm001s" },
+    { name: "GXM002", img: "/all_products/spa/Galaxy_Hot_Spa.jpg", link: "/products/gx-series/gxm002" },
+    { name: "GXM003", img: "/all_products/Spa_Bathtubs.jpg", link: "/products/gx-series/gxm003" },
+    { name: "GXM004", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", link: "/products/gx-series/gxm004" },
+    { name: "GXM006", img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg", link: "/products/gx-series/gxm006" },
+    { name: "GXM006S", img: "/all_products/Galaxy_Elanza.jpg", link: "/products/gx-series/gxm006s" },
+    { name: "GXM008", img: "/all_products/Massage_Bathtubs/Galaxy-Oscar.jpg", link: "/products/gx-series/gxm008" },
+    { name: "GXM009", img: "/all_products/Galaxy_Standard.jpg", link: "/products/gx-series/gxm009" },
+    { name: "GXM010", img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg", link: "/products/gx-series/gxm010" },
+    { name: "GXM011", img: "/all_products/spa/Galaxy_Hot_Spa.jpg", link: "/products/gx-series/gxm011" },
 
-      {
-        name: "Galaxy Turbo Classic",
-        sizes: ["1525 x 1525 x 640 mm"],
-        material: "Acrylic (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 04 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        fullDetails: `Galaxy Turbo Classic
-Size: 1525 x 1525 x 640 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 04 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-`,
-        img: "/all_products/Spa_Bathtubs/Galaxy_Turbo_Classic.jpg",
-      },
+    /* HEAVY DUTY GX SERIES */
+    { name: "GX 002", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", link: "/products/gx-series/gx-002" },
+    { name: "GX 004", img: "/all_products/Massage_Bathtubs/Galaxy-Oscar.jpg", link: "/products/gx-series/gx-004" },
+    { name: "GX 005", img: "/all_products/spa/Galaxy_Hot_Spa.jpg", link: "/products/gx-series/gx-005" },
+    { name: "GX 006", img: "/all_products/Galaxy_Standard.jpg", link: "/products/gx-series/gx-006" },
+    { name: "GX 007", img: "/all_products/Galaxy_Standard.jpg", link: "/products/gx-series/gx-007" },
+    { name: "GX 5503", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", link: "/products/gx-series/gx-5503" },
+    { name: "GX 5539", img: "/all_products/spa/Galaxy_Hot_Spa.jpg", link: "/products/gx-series/gx-5539" },
+    { name: "GX 5533", img: "/all_products/Galaxy_Standard.jpg", link: "/products/gx-series/gx-5533" },
 
-      {
-        name: "Galaxy Turbo",
-        sizes: ["1350 x 1350 x 560 mm"],
-        material: "Acrylic (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 02 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        fullDetails: `Galaxy Turbo
-Size: 1350 x 1350 x 560 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 02 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-`,
-        img: "/all_products/Spa_Bathtubs/Galaxy_Turbo.jpg",
-      },
+    /* Variants – based on your folder names */
+    { name: "GX 5501 (variant 1)", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", link: "/products/gx-series/gx-5501_v1" },
+    { name: "GX 5501 (variant 2)", img: "/all_products/spa/Galaxy_Hot_Spa.jpg", link: "/products/gx-series/gx-5501-v2" },
+      ],
+    },
 
-      {
-        name: "Galaxy Rossette",
-        sizes: ["1210 x 1210 x 560 mm"],
-        material: "Acrylic (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 02 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        fullDetails: `Galaxy Rossette
-Size: 1210 x 1210 x 560 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 02 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-`,
-        img: "/all_products/Spa_Bathtubs/Galaxy_Rossette.jpg",
-      },
+    {
+      category: "Glass Partition Cubicle",
+      subProducts: [
+        { name: "Standard Shower Panels", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", link: "/products/standard-shower-panels" },
+        { name: "Tempered Glass Cubicles", img: "/all_products/spa/Galaxy_Hot_Spa.jpg", link: "/products/tempered-glass-cubicles" },
+        { name: "Spa & Bath Compatible Glass Units", img: "/all_products/spa/Galaxy_Utiliti.jpg", link: "/products/spa-bath-glass-units" },
+      ],
+    },
 
-      {
-        name: "Galaxy Spacio",
-        sizes: ["1365 x 1365 x 560 mm"],
-        material: "Acrylic (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 02 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        fullDetails: `Galaxy Spacio
-Size: 1365 x 1365 x 560 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 02 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-`,
-        img: "/all_products/Spa_Bathtubs/Galaxy_Spacio.jpg",
-      },
-    ],
-  },
 
-/* PART 4 of 5: Massage Bathtubs (detailed) + Steam & Sauna lists + Pumps */
-  {
-    category: "Massage Bathtubs",
-    subProducts: [
-      {
-        name: "Galaxy Seagull W",
-        sizes: ["1615 x 975 x 610 mm"],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 02 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        fullDetails: `Galaxy Seagull W
-Size: 1615 x 975 x 610 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 02 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-`,
-        img: "/all_products/Massage_Bathtubs/Galaxy-Seagull-W.jpg",
-      },
+  ]; // end productCategories
 
-      {
-        name: "Galaxy Oscar",
-        sizes: ["1210 x 1815 x 540 mm"],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 04 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        faucetSets: ["Hot & Cold mixer","Multiflow Hand Shower","Waterfall Spout","Online Heaters (3kw)"],
-        fullDetails: `Galaxy Oscar
-Size: 1210 x 1815 x 540 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 04 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-FAUCET SETS: Hot & Cold mixer, Multiflow Hand Shower, Waterfall Spout, Online Heaters (3kw)
-`,
-        img: "/all_products/Massage_Bathtubs/Galaxy-Oscar.jpg",
-      },
-
-      {
-        name: "Galaxy Oscar Deluxe",
-        sizes: ["965 x 1830 x 635 mm"],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 04 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        fullDetails: `Galaxy Oscar Deluxe
-Size: 965 x 1830 x 635 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 04 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-`,
-        img: "/all_products/Massage_Bathtubs/Galaxy-Oscar-Deluxe.jpg",
-      },
-
-      {
-        name: "Galaxy Lancer",
-        sizes: ["1215 x 1830 x 700 mm", "1310 x 1830 x 700 mm"],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        variants: ["Lancer (L)", "Lancer (R)"],
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 04 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        fullDetails: `Galaxy Lancer
-Sizes: 1215 x 1830 x 700 mm; 1310 x 1830 x 700 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-Variants: Lancer (L) and Lancer (R)
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 04 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-OPTIONAL FEATURES: Bubble Bath System | Air Blower 400w | 12 Bubble Jets
-`,
-        img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg",
-      },
-
-      {
-        name: "Galaxy Smart Round",
-        sizes: ["1500 x 650 mm"],
-        material: "Acrylic Bath Tub Heavy Duty (PMMA)",
-        color: "White",
-        basicCombo: [
-          "Front Panel",
-          "Standard Massage system with 6 jets",
-          "Spinal 02 Jet",
-          "1.5HP imported motor with PN on/off",
-          "Pop-up Coupling",
-          "Pressure Control Switch",
-          "Multi Chromatic under Water Light",
-          "Dream Pillow"
-        ],
-        optionalFeatures: ["Bubble Bath System","Air Blower 400w","12 Bubble Jets"],
-        fullDetails: `Galaxy Smart Round
-Size: 1500 x 650 mm
-Material: Acrylic Bath Tub Heavy Duty (PMMA)
-Color: White
-BASIC COMBO: Front Panel | Standard Massage system with 6 jets | Spinal 02 Jet | 1.5HP imported motor with PN on/off | Pop-up Coupling | Pressure Control Switch | Multi Chromatic under Water Light | Dream Pillow
-`,
-        img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg",
-      },
-    ],
-  },
-
-  /* Steam Bathtubs (models considered steam-compatible) */
-  {
-    category: "Steam Bathtubs",
-    subProducts: [
-      {
-        name: "Galaxy Round Spa",
-        note: "Heater / Steam compatible",
-        img: "/all_products/Spa_Bathtubs.jpg",
-        fullDetails: `Galaxy Round Spa — Steam / Heater compatible (see Spa Bathtubs for full specs)`
-      },
-      { name: "Galaxy Spa Range (All Models)", img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg", fullDetails: "Steam-capable spa models" },
-      { name: "Galaxy Lancer Series", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", fullDetails: "Steam-capable variants" },
-      { name: "Galaxy Oscar Series", img: "/all_products/Massage_Bathtubs/Galaxy-Oscar-Deluxe.jpg", fullDetails: "Steam-capable variants" },
-      { name: "Galaxy Seagull W", img: "/all_products/Massage_Bathtubs/Galaxy-Seagull-W.jpg", fullDetails: "Steam-capable model" },
-      { name: "Galaxy Smart Round", img: "/all_products/spa/Galaxy_Round_Spa.jpg", fullDetails: "Steam-capable model" },
-      { name: "Galaxy Turbo Series", img: "/all_products/spa/Galaxy_Utiliti.jpg", fullDetails: "Steam-capable series" },
-      { name: "Galaxy Ocean Round", img: "/all_products/Galaxy_Standard.jpg", fullDetails: "Steam-capable model" },
-      { name: "Galaxy Verona Round", img: "/all_products/Spa_Bathtubs.jpg", fullDetails: "Steam-capable model" },
-      { name: "Galaxy Classic", img: "/all_products/Galaxy_Regular.jpg", fullDetails: "Steam-capable model" },
-    ],
-  },
-
-/* PART 5 of 5: Sauna, Pressure Pumps, Glass Partition Cubicle and closing */
-  {
-    category: "Sauna Bathtubs",
-    subProducts: [
-      { name: "Galaxy Hot Spa", img: "/all_products/spa/Galaxy_Hot_Spa.jpg", fullDetails: "Sauna-capable model (heater + jets + spa combination)" },
-      { name: "Galaxy Round Spa", img: "/all_products/spa/Galaxy_Round_Spa.jpg", fullDetails: "Sauna-capable model" },
-      { name: "Galaxy Turbo XL Deluxe", img: "/all_products/Galaxy_Standard.jpg", fullDetails: "Sauna-capable model" },
-      { name: "Galaxy Turbo Classic", img: "/all_products/Massage_Bathtubs/Galaxy-Oscar-Deluxe.jpg", fullDetails: "Sauna-capable model" },
-      { name: "Galaxy Lancer Series", img: "/all_products/Galaxy_Standard.jpg", fullDetails: "Sauna-capable variants" },
-      { name: "Galaxy Maderia", img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg", fullDetails: "Sauna-capable model" },
-      { name: "Galaxy Verona Round", img: "/all_products/Galaxy_Valio.jpg", fullDetails: "Sauna-capable model" },
-      { name: "Galaxy Classic", img: "/all_products/spa/Galaxy_Hot_Spa.jpg", fullDetails: "Sauna-capable model" },
-    ],
-  },
-
-  {
-    category: "Pressure Pump",
-    subProducts: [
-      // GX Series
-      { name: "GXM001", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", fullDetails: "GXM001 model — pressure jet & pump" },
-      { name: "GXM001S", img: "/all_products/Spa_Bathtubs.jpg", fullDetails: "GXM001S model — pressure jet & pump" },
-      { name: "GXM002", img: "/all_products/spa/Galaxy_Hot_Spa.jpg" },
-      { name: "GXM003", img: "/all_products/Spa_Bathtubs.jpg" },
-      { name: "GXM004", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg" },
-      { name: "GXM006", img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg" },
-      { name: "GXM006S", img: "/all_products/Galaxy_Elanza.jpg" },
-      { name: "GXM008", img: "/all_products/Massage_Bathtubs/Galaxy-Oscar.jpg" },
-      { name: "GXM009", img: "/all_products/Galaxy_Standard.jpg" },
-      { name: "GXM010", img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg" },
-      { name: "GXM011", img: "/all_products/spa/Galaxy_Hot_Spa.jpg" },
-
-      // Heavy Duty GX
-      { name: "GX 002", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg" },
-      { name: "GX 004", img: "/all_products/Massage_Bathtubs/Galaxy-Oscar.jpg" },
-      { name: "GX 005", img: "/all_products/spa/Galaxy_Hot_Spa.jpg" },
-      { name: "GX 006", img: "/all_products/Galaxy_Standard.jpg" },
-      { name: "GX 007", img: "/all_products/Galaxy_Standard.jpg" },
-      { name: "GX 5503", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg" },
-      { name: "GX 5539", img: "/all_products/spa/Galaxy_Hot_Spa.jpg" },
-      { name: "GX 5533", img: "/all_products/Galaxy_Standard.jpg" },
-      { name: "GX 5501 (variant 1)", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg" },
-      { name: "GX 5501 (variant 2)", img: "/all_products/spa/Galaxy_Hot_Spa.jpg" },
-    ],
-  },
-
-  {
-    category: "Glass Partition Cubicle",
-    subProducts: [
-      { name: "Standard Shower Panels", img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", fullDetails: "Shower partition panels compatible with spa & bath spaces" },
-      { name: "Tempered Glass Cubicles", img: "/all_products/spa/Galaxy_Hot_Spa.jpg", fullDetails: "Tempered glass shower cubicles with stainless fittings" },
-      { name: "Spa & Bath Compatible Glass Units", img: "/all_products/spa/Galaxy_Utiliti.jpg", fullDetails: "Glass units designed to integrate with spa and bath installations" },
-    ],
-  },
-
-  /* small metadata entry for company / header text you provided */
-  {
-    category: "Catalog Metadata",
-    subProducts: [
-      {
-        name: "Catalog Year / Header",
-        fullDetails: `2023
-Bath Tubs | Massage Tub | Steam Bath | Shower Partition | Pressure Pump | Sona Bath | Fountains
-Swimming Pool & Accessories | Shower Panel
-B a t h  S o l u t i o n — GALAXY — GALAXY SANITATIONS PVT.LTD.`
-      }
-    ]
-  }
-]; // end productCategories
-
-/* ================= END OF FILE (PART 1–5 combined) ================= */
-
+  /* ================= PAGE UI ================= */
   return (
     <>
-      {/* ================= HERO SECTION (Left text + Right image) ================= */}
+      {/* HERO */}
       <section className="product-hero">
         <div className="hero-left">
           <h1>Premium Products</h1>
-          <p>
-            Explore our luxury range of bathtubs, spa systems, steam units, pumps, and glass cubicles.
-          </p>
+          <p>Explore our luxury range of bathtubs, spa systems, steam units, pumps, and glass cubicles.</p>
           <div className="hero-btns">
             <a href="#products" className="hero-btn gold">Explore Now</a>
             <a href="/contact" className="hero-btn outline">Get Quote</a>
           </div>
         </div>
 
-        <div className="hero-right" aria-hidden>
-          {/* Using the uploaded image file path as the hero image URL */}
-          <div className="hero-glass">
-            <img src="/images/hero/pro_bath.jpg" alt="Products hero" />
-          </div>
+        <div className="hero-right">
+          <div className="hero-glass"><img src="/images/hero/pro_bath.jpg" alt="Products hero" /></div>
         </div>
       </section>
 
-      {/* ================= PRODUCT PAGE ================= */}
+      {/* PRODUCT PAGE */}
       <section className="product-page" id="products">
-
         {/* LEFT SIDEBAR */}
         <aside className="product-sidebar">
           <h3>Product Category</h3>
-
           {productCategories.map((cat, index) => (
             <button
               key={index}
@@ -701,35 +306,33 @@ B a t h  S o l u t i o n — GALAXY — GALAXY SANITATIONS PVT.LTD.`
         {/* RIGHT CONTENT */}
         <div className="product-content">
           {activeCategory === null ? (
-          <div className="empty-state">
-  <img src="/images/hero_02.png" alt="Preview" className="empty-img" />
-
-  <h2>Select a Category</h2>
-  <p>Browse premium bathtubs, spa systems, steam units, pumps, and more.</p>
-
-  <div className="down-arrow"></div>
-</div>
-
+            <div className="empty-state">
+              <img src="/images/hero_02.png" alt="Preview" className="empty-img" />
+              <h2>Select a Category</h2>
+              <p>Browse premium bathtubs, spa systems, steam units, pumps, and more.</p>
+              <div className="down-arrow" />
+            </div>
           ) : (
             <>
-              <h2 className="category-title">
-                {productCategories[activeCategory].category}
-              </h2>
+              <h2 className="category-title">{productCategories[activeCategory].category}</h2>
 
               <div className="subproduct-grid">
                 {productCategories[activeCategory].subProducts.map((sub, i) => (
                   <div key={i} className="subproduct-card">
                     <img src={sub.img} alt={sub.name} className="sub-img" />
                     <h3>{sub.name}</h3>
-                    <p>{sub.desc}</p>
-                    <a className="detail-btn" href="#">View Details →</a>
+                    {sub.desc && <p className="sub-desc">{sub.desc}</p>}
+
+                    {/* VIEW DETAILS — uses manual link */}
+                    <a className="detail-btn" href={sub.link || "#"}>
+                      View Details →
+                    </a>
                   </div>
                 ))}
               </div>
             </>
           )}
         </div>
-
       </section>
     </>
   );
