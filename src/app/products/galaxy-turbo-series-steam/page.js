@@ -18,7 +18,7 @@ export default function GalaxyTurboSeriesSteam() {
 
   const product = {
     name: "Galaxy Turbo Series (Steam-Capable)",
-    img: "/all_products/turbo/Galaxy_Turbo_Classic.jpg",
+    img: "/all_products/spa/Galaxy_Utiliti.jpg",
 
     sizes: [
       "Galaxy Turbo XL Deluxe — 1525 x 1525 x 570 mm",
@@ -213,7 +213,7 @@ export default function GalaxyTurboSeriesSteam() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -238,7 +238,7 @@ export default function GalaxyTurboSeriesSteam() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -263,7 +263,7 @@ export default function GalaxyTurboSeriesSteam() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -288,7 +288,7 @@ export default function GalaxyTurboSeriesSteam() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

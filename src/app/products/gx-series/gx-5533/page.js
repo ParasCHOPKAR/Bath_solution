@@ -17,7 +17,7 @@ export default function GX5533() {
 
   const product = {
     name: "GX 5533",
-    img: "/all_products/gx/GX_5533.jpg",
+    img: "/all_products/Galaxy_Standard.jpg",
 
     sizes: ["Premium Tempered Glass Panel (8mm)"],
 
@@ -193,7 +193,7 @@ export default function GX5533() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -214,7 +214,7 @@ export default function GX5533() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -235,7 +235,7 @@ export default function GX5533() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

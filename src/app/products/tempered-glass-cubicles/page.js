@@ -18,7 +18,7 @@ export default function TemperedGlassCubicles() {
 
   const product = {
     name: "Tempered Glass Cubicles",
-    img: "/all_products/shower_cubicles/Tempered_Glass_Cubicle.jpg",
+    img: "/all_products/spa/Galaxy_Hot_Spa.jpg",
 
     sizes: [
       "900 x 900 mm",
@@ -198,7 +198,7 @@ export default function TemperedGlassCubicles() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -213,7 +213,7 @@ export default function TemperedGlassCubicles() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -228,7 +228,7 @@ export default function TemperedGlassCubicles() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

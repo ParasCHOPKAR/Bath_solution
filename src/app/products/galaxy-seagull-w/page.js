@@ -179,7 +179,7 @@ export default function GalaxySeagullW() {
           <ul style={{ marginTop: "10px" }}>
             {product.basicCombo.map((it, idx) => (
               <li key={idx} style={{ marginBottom: "6px", opacity: 0.9 }}>
-                • {it}
+               {it}
               </li>
             ))}
           </ul>
@@ -197,7 +197,7 @@ export default function GalaxySeagullW() {
           <ul style={{ marginTop: "10px" }}>
             {product.optionalFeatures.map((it, idx) => (
               <li key={idx} style={{ marginBottom: "6px", opacity: 0.9 }}>
-                • {it}
+               {it}
               </li>
             ))}
           </ul>
@@ -215,7 +215,7 @@ export default function GalaxySeagullW() {
           <ul style={{ marginTop: "10px" }}>
             {product.faucetSets.map((it, idx) => (
               <li key={idx} style={{ marginBottom: "6px", opacity: 0.9 }}>
-                • {it}
+               {it}
               </li>
             ))}
           </ul>

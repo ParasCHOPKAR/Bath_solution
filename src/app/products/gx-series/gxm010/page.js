@@ -18,7 +18,7 @@ export default function GXM010() {
 
   const product = {
     name: "GXM010",
-    img: "/all_products/pumps/GXM010.jpg", // ✨ Update image path here
+    img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg", // ✨ Update image path here
 
     sizes: ["High-Pressure Dual Flow Motor"],
 
@@ -43,7 +43,7 @@ export default function GXM010() {
     ],
 
     faucetSets: [
-      "Compatible With All GXM Series • Hydro Systems • Bath Systems • Spa Pressure Lines"
+      "Compatible With All GXM SeriesHydro SystemsBath SystemsSpa Pressure Lines"
     ]
   };
 
@@ -199,7 +199,7 @@ export default function GXM010() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -224,7 +224,7 @@ export default function GXM010() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -249,7 +249,7 @@ export default function GXM010() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

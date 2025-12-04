@@ -18,9 +18,9 @@ export default function GX004() {
 
   const product = {
     name: "GX 004",
-    img: "/all_products/gx-series/GX004.jpg", // ⭐ Update with correct image
+    img: "/all_products/Massage_Bathtubs/Galaxy-Oscar.jpg", // ⭐ Update with correct image
 
-    sizes: ["Multi-Mode Premium Shower Panel • GX Series"],
+    sizes: ["Multi-Mode Premium Shower PanelGX Series"],
 
     material: "Tempered Glass + Stainless Steel",
     color: "Black / Chrome Finish",
@@ -189,7 +189,7 @@ export default function GX004() {
           <ul style={{ marginTop: "12px" }}>
             {product.basicCombo.map((item, i) => (
               <li key={i} style={{ fontSize: "15px", marginBottom: "7px" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -201,7 +201,7 @@ export default function GX004() {
           <ul style={{ marginTop: "12px" }}>
             {product.optionalFeatures.map((item, i) => (
               <li key={i} style={{ fontSize: "15px", marginBottom: "7px" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -213,7 +213,7 @@ export default function GX004() {
           <ul style={{ marginTop: "12px" }}>
             {product.faucetSets.map((item, i) => (
               <li key={i} style={{ fontSize: "15px", marginBottom: "7px" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

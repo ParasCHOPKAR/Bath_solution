@@ -18,7 +18,7 @@ export default function StandardShowerPanels() {
 
   const product = {
     name: "Standard Shower Panels",
-    img: "/all_products/shower_panels/Standard_Shower_Panels.jpg",
+    img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg",
 
     sizes: [
       "1200 mm (Standard)",
@@ -205,7 +205,7 @@ export default function StandardShowerPanels() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -226,7 +226,7 @@ export default function StandardShowerPanels() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -248,7 +248,7 @@ export default function StandardShowerPanels() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

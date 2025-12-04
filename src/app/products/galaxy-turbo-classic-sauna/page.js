@@ -18,7 +18,7 @@ export default function GalaxyTurboClassicSauna() {
 
   const product = {
     name: "Galaxy Turbo Classic (Sauna-capable)",
-    img: "/all_products/turbo/Galaxy_Turbo_Classic.jpg",
+    img: "/all_products/Spa_Bathtubs/Galaxy_Turbo_Classic.jpg",
 
     sizes: ["1525 × 1525 × 640 mm"],
 
@@ -197,7 +197,7 @@ export default function GalaxyTurboClassicSauna() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -212,7 +212,7 @@ export default function GalaxyTurboClassicSauna() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -227,7 +227,7 @@ export default function GalaxyTurboClassicSauna() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

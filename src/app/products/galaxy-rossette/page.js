@@ -17,7 +17,7 @@ export default function GalaxyRossette() {
 
   const product = {
     name: "Galaxy Rossette",
-    img: "/all_products/turbo/Galaxy_Rossette.jpg",
+    img: "/all_products/Spa_Bathtubs/Galaxy_Rossette.jpg",
     sizes: ["1210 x 1210 x 560 mm"],
     material: "Acrylic (PMMA)",
     color: "White",

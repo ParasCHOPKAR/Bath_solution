@@ -18,7 +18,7 @@ export default function GXM009() {
 
   const product = {
     name: "GXM009",
-    img: "/all_products/pumps/GXM009.jpg", // update file here
+    img: "/all_products/Galaxy_Standard.jpg", // update file here
 
     sizes: ["High-Performance Pressure Variant"],
 
@@ -43,7 +43,7 @@ export default function GXM009() {
     ],
 
     faucetSets: [
-      "Compatible with Entire GXM Series • Spa Units • Bath Systems • Hydro Pump Modules",
+      "Compatible with Entire GXM SeriesSpa UnitsBath SystemsHydro Pump Modules",
     ],
   };
 
@@ -196,7 +196,7 @@ export default function GXM009() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -221,7 +221,7 @@ export default function GXM009() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -247,7 +247,7 @@ export default function GXM009() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

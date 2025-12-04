@@ -17,7 +17,7 @@ export default function GX5503() {
 
   const product = {
     name: "GX 5503",
-    img: "/all_products/gx/GX_5503.jpg",
+    img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg",
 
     sizes: ["Standard Glass Panel Size"],
 
@@ -194,7 +194,7 @@ export default function GX5503() {
                   opacity: "0.9",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -215,7 +215,7 @@ export default function GX5503() {
                   opacity: "0.9",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -236,7 +236,7 @@ export default function GX5503() {
                   opacity: "0.9",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

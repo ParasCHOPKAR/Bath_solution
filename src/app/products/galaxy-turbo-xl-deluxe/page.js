@@ -18,7 +18,7 @@ export default function GalaxyTurboXLDeluxe() {
 
   const product = {
     name: "Galaxy Turbo XL Deluxe",
-    img: "/all_products/turbo/Galaxy_Turbo_XL_Deluxe.jpg",
+    img: "/all_products/Spa_Bathtubs/Galaxy_Turbo_XL_Deluxe.jpg",
     sizes: ["1525 x 1525 x 570 mm"],
     material: "Acrylic Bath Tub Heavy Duty (PMMA)",
     color: "White",

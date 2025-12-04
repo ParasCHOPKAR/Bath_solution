@@ -18,7 +18,7 @@ export default function GalaxySeagullWSteam() {
 
   const product = {
     name: "Galaxy Seagull W (Steam-capable)",
-    img: "/all_products/seagull/Galaxy_Seagull_W.jpg", // If you have a steam version image, update the path
+    img: "/all_products/Massage_Bathtubs/Galaxy-Seagull-W.jpg", // If you have a steam version image, update the path
 
     sizes: ["1615 x 975 x 610 mm"],
 
@@ -213,7 +213,7 @@ export default function GalaxySeagullWSteam() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -239,7 +239,7 @@ export default function GalaxySeagullWSteam() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -265,7 +265,7 @@ export default function GalaxySeagullWSteam() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -291,7 +291,7 @@ export default function GalaxySeagullWSteam() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

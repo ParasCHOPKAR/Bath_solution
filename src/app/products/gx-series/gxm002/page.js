@@ -18,7 +18,7 @@ export default function GXM002() {
 
   const product = {
     name: "GXM002",
-    img: "/all_products/shower_panels/GXM002.jpg",
+    img: "/all_products/spa/Galaxy_Hot_Spa.jpg",
 
     sizes: ["Standard Size"],
 
@@ -192,7 +192,7 @@ export default function GXM002() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -211,7 +211,7 @@ export default function GXM002() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -230,7 +230,7 @@ export default function GXM002() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

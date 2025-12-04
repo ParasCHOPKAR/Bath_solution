@@ -198,7 +198,7 @@ export default function GalaxyVeronaRoundSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -219,7 +219,7 @@ export default function GalaxyVeronaRoundSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -241,7 +241,7 @@ export default function GalaxyVeronaRoundSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

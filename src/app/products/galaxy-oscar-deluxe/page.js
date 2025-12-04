@@ -17,7 +17,7 @@ export default function GalaxyOscarDeluxe() {
 
   const product = {
     name: "Galaxy Oscar Deluxe",
-    img: "/all_products/Massage_Bathtubs/Galaxy_Oscar_Deluxe.jpg",
+    img: "/all_products/Massage_Bathtubs/Galaxy-Oscar-Deluxe.jpg",
 
     sizes: ["965 x 1830 x 635 mm"],
 
@@ -193,7 +193,7 @@ export default function GalaxyOscarDeluxe() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -218,7 +218,7 @@ export default function GalaxyOscarDeluxe() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -244,7 +244,7 @@ export default function GalaxyOscarDeluxe() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

@@ -17,7 +17,7 @@ export default function GXM001S() {
 
   const product = {
     name: "GXM001S",
-    img: "/all_products/shower_panels/GXM001S.jpg",
+    img: "/all_products/Spa_Bathtubs.jpg",
 
     sizes: ["Standard Size"],
 
@@ -190,7 +190,7 @@ export default function GXM001S() {
                 key={i}
                 style={{ marginBottom: "6px", opacity: "0.9", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -205,7 +205,7 @@ export default function GXM001S() {
                 key={i}
                 style={{ marginBottom: "6px", opacity: "0.9", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -220,7 +220,7 @@ export default function GXM001S() {
                 key={i}
                 style={{ marginBottom: "6px", opacity: "0.9", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

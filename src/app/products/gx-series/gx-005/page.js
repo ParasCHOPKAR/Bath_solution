@@ -18,9 +18,9 @@ export default function GX005() {
 
   const product = {
     name: "GX 005",
-    img: "/all_products/gx-series/GX005.jpg", // ⭐ update with correct image
+    img: "/all_products/spa/Galaxy_Hot_Spa.jpg", // ⭐ update with correct image
 
-    sizes: ["Luxury Multi-Function Shower Panel • GX Series"],
+    sizes: ["Luxury Multi-Function Shower PanelGX Series"],
 
     material: "Tempered Glass + Stainless Steel Body",
     color: "Black / Silver Chrome",
@@ -201,7 +201,7 @@ export default function GX005() {
                   opacity: "0.9",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -223,7 +223,7 @@ export default function GX005() {
                   opacity: "0.9",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -245,7 +245,7 @@ export default function GX005() {
                   opacity: "0.9",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

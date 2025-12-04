@@ -18,7 +18,7 @@ export default function GalaxyLancerSeriesSauna() {
 
   const product = {
     name: "Galaxy Lancer Series (Sauna-capable)",
-    img: "/all_products/lancer/Galaxy_Lancer_Main.jpg",
+    img: "/all_products/Galaxy_Standard.jpg",
 
     sizes: [
       "1215 × 1830 × 700 mm",
@@ -206,7 +206,7 @@ export default function GalaxyLancerSeriesSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -228,7 +228,7 @@ export default function GalaxyLancerSeriesSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -249,7 +249,7 @@ export default function GalaxyLancerSeriesSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

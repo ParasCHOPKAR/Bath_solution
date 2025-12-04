@@ -18,7 +18,7 @@ export default function GalaxyVeronaRound() {
 
   const product = {
     name: "Galaxy Verona Round",
-    img: "/all_products/Galaxy_Verona_Round.jpg", // adjust path if needed
+    img: "/all_products/Spa_Bathtubs.jpg", // adjust path if needed
 
     sizes: ["1525 mm"],
 
@@ -231,7 +231,7 @@ export default function GalaxyVeronaRound() {
             <div style={{ minWidth: "240px" }}>
               <h4 style={{ margin: "0 0 6px 0", color: "#d4af37" }}>Faucet Sets</h4>
               <div style={{ fontSize: "15px", opacity: 0.95 }}>
-                {product.faucetSets.join(" • ")}
+                {product.faucetSets.join("")}
               </div>
             </div>
 

@@ -18,9 +18,9 @@ export default function GXM011() {
 
   const product = {
     name: "GXM011",
-    img: "/all_products/pumps/GXM011.jpg", // ⭐ Update image here
+    img: "/all_products/spa/Galaxy_Hot_Spa.jpg", // ⭐ Update image here
 
-    sizes: ["Ultra High Pressure Motor • Compact Pro Series"],
+    sizes: ["Ultra High Pressure MotorCompact Pro Series"],
 
     material: "Industrial Steel Body + Anti-Corrosion Housing",
     color: "Black / Metallic Grey",
@@ -45,7 +45,7 @@ export default function GXM011() {
 
     faucetSets: [
       "Compatible with GXM, Turbo, Spa & Hydro Series",
-      "Supports Bath Tubs • Spa Jets • Pressure Lines"
+      "Supports Bath TubsSpa JetsPressure Lines"
     ]
   };
 
@@ -189,7 +189,7 @@ export default function GXM011() {
           <ul style={{ marginTop: "12px" }}>
             {product.basicCombo.map((item, i) => (
               <li key={i} style={{ fontSize: "15px", marginBottom: "7px" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -207,7 +207,7 @@ export default function GXM011() {
           <ul style={{ marginTop: "12px" }}>
             {product.optionalFeatures.map((item, i) => (
               <li key={i} style={{ fontSize: "15px", marginBottom: "7px" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -225,7 +225,7 @@ export default function GXM011() {
           <ul style={{ marginTop: "12px" }}>
             {product.faucetSets.map((item, i) => (
               <li key={i} style={{ fontSize: "15px", marginBottom: "7px" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

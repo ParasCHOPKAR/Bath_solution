@@ -17,7 +17,7 @@ export default function GX007() {
 
   const product = {
     name: "GX 007",
-    img: "/all_products/gx/GX_007.jpg",
+    img: "/all_products/Galaxy_Standard.jpg",
 
     sizes: ["Standard Size"],
 
@@ -182,7 +182,7 @@ export default function GX007() {
           <ul style={{ marginTop: "10px" }}>
             {product.basicCombo.map((item, i) => (
               <li key={i} style={{ marginBottom: "6px", opacity: "0.9" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -192,7 +192,7 @@ export default function GX007() {
           <ul style={{ marginTop: "10px" }}>
             {product.optionalFeatures.map((item, i) => (
               <li key={i} style={{ marginBottom: "6px", opacity: "0.9" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -202,7 +202,7 @@ export default function GX007() {
           <ul style={{ marginTop: "10px" }}>
             {product.faucetSets.map((item, i) => (
               <li key={i} style={{ marginBottom: "6px", opacity: "0.9" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

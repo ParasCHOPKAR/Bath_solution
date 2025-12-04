@@ -18,7 +18,7 @@ export default function GXM006() {
 
   const product = {
     name: "GXM006",
-    img: "/all_products/pumps/GXM006.jpg", // Place image here
+    img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg", // Place image here
 
     sizes: ["Standard Size", "Heavy Duty Variant (Optional)"],
 
@@ -192,7 +192,7 @@ export default function GXM006() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -217,7 +217,7 @@ export default function GXM006() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -242,7 +242,7 @@ export default function GXM006() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

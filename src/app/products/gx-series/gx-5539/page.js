@@ -17,7 +17,7 @@ export default function GX5539() {
 
   const product = {
     name: "GX 5539",
-    img: "/all_products/gx/GX_5539.jpg",
+    img: "/all_products/spa/Galaxy_Hot_Spa.jpg",
 
     sizes: ["Premium Tempered Glass Panel"],
 
@@ -197,7 +197,7 @@ export default function GX5539() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -218,7 +218,7 @@ export default function GX5539() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -239,7 +239,7 @@ export default function GX5539() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

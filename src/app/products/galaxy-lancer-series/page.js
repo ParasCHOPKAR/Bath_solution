@@ -18,7 +18,7 @@ export default function GalaxyLancerSeries() {
 
   const product = {
     name: "Galaxy Lancer Series",
-    img: "/all_products/lancer/Galaxy_Lancer_Main.jpg",
+    img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg",
 
     sizes: [
       "1215 x 1830 x 700 mm",
@@ -203,7 +203,7 @@ export default function GalaxyLancerSeries() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -229,7 +229,7 @@ export default function GalaxyLancerSeries() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -255,7 +255,7 @@ export default function GalaxyLancerSeries() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

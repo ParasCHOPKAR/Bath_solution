@@ -18,9 +18,9 @@ export default function GX002() {
 
   const product = {
     name: "GX 002",
-    img: "/all_products/gx-series/GX002.jpg", // ⭐ Update actual image name here
+    img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", // ⭐ Update actual image name here
 
-    sizes: ["High Pressure Shower Panel • GX Series"],
+    sizes: ["High Pressure Shower PanelGX Series"],
 
     material: "Tempered Glass + Stainless Steel Body",
     color: "Black Glass / Chrome Steel",
@@ -190,7 +190,7 @@ export default function GX002() {
           <ul style={{ marginTop: "12px" }}>
             {product.basicCombo.map((item, i) => (
               <li key={i} style={{ fontSize: "15px", marginBottom: "7px" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -202,7 +202,7 @@ export default function GX002() {
           <ul style={{ marginTop: "12px" }}>
             {product.optionalFeatures.map((item, i) => (
               <li key={i} style={{ fontSize: "15px", marginBottom: "7px" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -214,7 +214,7 @@ export default function GX002() {
           <ul style={{ marginTop: "12px" }}>
             {product.faucetSets.map((item, i) => (
               <li key={i} style={{ fontSize: "15px", marginBottom: "7px" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

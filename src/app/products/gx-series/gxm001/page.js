@@ -17,7 +17,7 @@ export default function GXM001() {
 
   const product = {
     name: "GXM001",
-    img: "/all_products/shower_panels/GXM001.jpg",
+    img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg",
 
     sizes: ["Standard Size"],
 
@@ -180,7 +180,7 @@ export default function GXM001() {
           <ul style={{ marginTop: "10px" }}>
             {product.basicCombo.map((item, i) => (
               <li key={i} style={{ marginBottom: "6px", opacity: "0.9" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -192,7 +192,7 @@ export default function GXM001() {
           <ul style={{ marginTop: "10px" }}>
             {product.optionalFeatures.map((item, i) => (
               <li key={i} style={{ marginBottom: "6px", opacity: "0.9" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -204,7 +204,7 @@ export default function GXM001() {
           <ul style={{ marginTop: "10px" }}>
             {product.faucetSets.map((item, i) => (
               <li key={i} style={{ marginBottom: "6px", opacity: "0.9" }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

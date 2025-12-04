@@ -18,7 +18,7 @@ export default function GalaxyMaderiaSauna() {
 
   const product = {
     name: "Galaxy Maderia (Sauna-capable)",
-    img: "/all_products/sauna/Galaxy_Maderia.jpg",
+    img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg",
 
     sizes: ["1840 mm"],
 
@@ -198,7 +198,7 @@ export default function GalaxyMaderiaSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -220,7 +220,7 @@ export default function GalaxyMaderiaSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -241,7 +241,7 @@ export default function GalaxyMaderiaSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

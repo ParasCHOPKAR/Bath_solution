@@ -18,7 +18,7 @@ export default function GXM006S() {
 
   const product = {
     name: "GXM006S",
-    img: "/all_products/pumps/GXM006S.jpg", // place image here
+    img: "/all_products/Galaxy_Elanza.jpg", // place image here
 
     sizes: ["Compact High-Pressure Variant"],
 
@@ -192,7 +192,7 @@ export default function GXM006S() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -217,7 +217,7 @@ export default function GXM006S() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -242,7 +242,7 @@ export default function GXM006S() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

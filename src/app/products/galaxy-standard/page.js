@@ -187,7 +187,7 @@ export default function GalaxyStandard() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -202,7 +202,7 @@ export default function GalaxyStandard() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -217,7 +217,7 @@ export default function GalaxyStandard() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

@@ -17,7 +17,7 @@ export default function GX5501() {
 
   const product = {
     name: "GX 5501 (Variant 1)",
-    img: "/all_products/gx/GX_5501.jpg",
+    img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg",
 
     sizes: ["Premium Tempered Glass Panel (8mm)"],
 
@@ -193,7 +193,7 @@ export default function GX5501() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -214,7 +214,7 @@ export default function GX5501() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -235,7 +235,7 @@ export default function GX5501() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

@@ -194,7 +194,7 @@ export default function GalaxySpaRange() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -220,7 +220,7 @@ export default function GalaxySpaRange() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -246,7 +246,7 @@ export default function GalaxySpaRange() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

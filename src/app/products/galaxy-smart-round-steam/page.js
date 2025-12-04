@@ -208,7 +208,7 @@ export default function GalaxySmartRoundSteam() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -234,7 +234,7 @@ export default function GalaxySmartRoundSteam() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -260,7 +260,7 @@ export default function GalaxySmartRoundSteam() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -286,7 +286,7 @@ export default function GalaxySmartRoundSteam() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

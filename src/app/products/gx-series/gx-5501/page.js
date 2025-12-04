@@ -193,7 +193,7 @@ export default function GX5501() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -214,7 +214,7 @@ export default function GX5501() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -235,7 +235,7 @@ export default function GX5501() {
                   fontSize: "15px"
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

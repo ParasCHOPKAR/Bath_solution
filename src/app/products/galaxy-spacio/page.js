@@ -17,7 +17,7 @@ export default function GalaxySpacio() {
 
   const product = {
     name: "Galaxy Spacio",
-    img: "/all_products/turbo/Galaxy_Spacio.jpg",
+    img: "/all_products/Spa_Bathtubs/Galaxy_Spacio.jpg",
     sizes: ["1365 x 1365 x 560 mm"],
     material: "Acrylic (PMMA)",
     color: "White",

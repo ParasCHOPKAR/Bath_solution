@@ -18,7 +18,7 @@ export default function GXM008() {
 
   const product = {
     name: "GXM008",
-    img: "/all_products/pumps/GXM008.jpg", // place image here
+    img: "/all_products/Massage_Bathtubs/Galaxy-Oscar.jpg", // place image here
 
     sizes: ["High-Capacity Pressure Variant"],
 
@@ -192,7 +192,7 @@ export default function GXM008() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -217,7 +217,7 @@ export default function GXM008() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -242,7 +242,7 @@ export default function GXM008() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

@@ -18,7 +18,7 @@ export default function GalaxyClassicSauna() {
 
   const product = {
     name: "Galaxy Classic (Sauna-capable)",
-    img: "/all_products/sauna/Galaxy_Classic.jpg",
+    img: "/all_products/spa/Galaxy_Hot_Spa.jpg",
 
     sizes: ["1525 mm"],
 
@@ -198,7 +198,7 @@ export default function GalaxyClassicSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -217,7 +217,7 @@ export default function GalaxyClassicSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -237,7 +237,7 @@ export default function GalaxyClassicSauna() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

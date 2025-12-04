@@ -18,7 +18,7 @@ export default function GalaxyClassic() {
 
   const product = {
     name: "Galaxy Classic",
-    img: "/all_products/Galaxy_Classic.jpg",
+    img: "/all_products/Galaxy_Regular.jpg",
 
     sizes: ["1525 mm"],
 
@@ -220,7 +220,7 @@ export default function GalaxyClassic() {
           <ul style={{ marginTop: "8px", lineHeight: 1.6 }}>
             {product.basicCombo.map((item, i) => (
               <li key={i} style={{ opacity: 0.95 }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -230,7 +230,7 @@ export default function GalaxyClassic() {
           <ul style={{ marginTop: "8px", lineHeight: 1.6 }}>
             {product.optionalFeatures.map((item, i) => (
               <li key={i} style={{ opacity: 0.95 }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -240,7 +240,7 @@ export default function GalaxyClassic() {
           <ul style={{ marginTop: "8px", lineHeight: 1.5 }}>
             {product.faucetSets.map((item, i) => (
               <li key={i} style={{ opacity: 0.95 }}>
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

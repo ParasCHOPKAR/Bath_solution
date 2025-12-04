@@ -194,7 +194,7 @@ export default function GalaxyValio() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -215,7 +215,7 @@ export default function GalaxyValio() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -236,7 +236,7 @@ export default function GalaxyValio() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

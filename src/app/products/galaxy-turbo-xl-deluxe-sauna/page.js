@@ -18,7 +18,7 @@ export default function GalaxyTurboXLDeluxeSauna() {
 
   const product = {
     name: "Galaxy Turbo XL Deluxe (Sauna-capable)",
-    img: "/all_products/turbo/Galaxy_Turbo_XL_Deluxe.jpg",
+    img: "/all_products/Galaxy_Standard.jpg",
 
     sizes: ["1525 × 1525 × 570 mm"],
 
@@ -197,7 +197,7 @@ export default function GalaxyTurboXLDeluxeSauna() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -218,7 +218,7 @@ export default function GalaxyTurboXLDeluxeSauna() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -239,7 +239,7 @@ export default function GalaxyTurboXLDeluxeSauna() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

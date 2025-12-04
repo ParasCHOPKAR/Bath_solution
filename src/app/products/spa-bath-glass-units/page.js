@@ -18,7 +18,7 @@ export default function SpaBathGlassUnits() {
 
   const product = {
     name: "Spa & Bath Compatible Glass Units",
-    img: "/all_products/shower_cubicles/Spa_Bath_Compatible_Glass_Units.jpg",
+    img: "/all_products/spa/Galaxy_Utiliti.jpg",
 
     sizes: [
       "900 x 900 mm",
@@ -200,7 +200,7 @@ export default function SpaBathGlassUnits() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -215,7 +215,7 @@ export default function SpaBathGlassUnits() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -230,7 +230,7 @@ export default function SpaBathGlassUnits() {
                 key={i}
                 style={{ opacity: "0.9", marginBottom: "6px", fontSize: "15px" }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

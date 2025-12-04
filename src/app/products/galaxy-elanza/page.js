@@ -203,7 +203,7 @@ export default function GalaxyElanza() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -228,7 +228,7 @@ export default function GalaxyElanza() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -253,7 +253,7 @@ export default function GalaxyElanza() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

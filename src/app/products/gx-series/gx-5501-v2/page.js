@@ -17,7 +17,7 @@ export default function GX5501V2() {
 
   const product = {
     name: "GX 5501 (Variant 2)",
-    img: "/all_products/gx/GX_5501_V2.jpg",
+    img: "/all_products/spa/Galaxy_Hot_Spa.jpg",
 
     sizes: ["8mm / 10mm Tempered Glass Panel"],
 
@@ -197,7 +197,7 @@ export default function GX5501V2() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -217,7 +217,7 @@ export default function GX5501V2() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -237,7 +237,7 @@ export default function GX5501V2() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

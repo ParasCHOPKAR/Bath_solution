@@ -3,7 +3,10 @@ import "./page.css";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import FloatingButtons from "../components/FloatingButtons"; // ✅ Import FloatingButtons
+import FloatingButtons from "../components/FloatingButtons";
+
+// ⭐ Import Follow Cursor Component
+import FollowCursor from "../components/FollowCursor";
 
 export const metadata = {
   title: "Bath Solution",
@@ -14,10 +17,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar/>
+        {/* ⭐ Global Follow Cursor */}
+        <FollowCursor />
+
+        <Navbar />
         <main>{children}</main>
-        <FloatingButtons /> {/* ✅ Floating WhatsApp & Phone Buttons */}
-        <Footer/> {/* ✅ Footer at the bottom */}
+
+        {/* Floating WhatsApp & Phone Buttons */}
+        <FloatingButtons />
+
+        <Footer />
       </body>
     </html>
   );

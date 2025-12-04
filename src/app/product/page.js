@@ -54,7 +54,7 @@ export default function ProductsPage() {
           name: "Galaxy Hot Spa",
           img: "/all_products/spa/Galaxy_Hot_Spa.jpg",
           link: "/products/galaxy-hot-spa",
-          desc: "Premium hot spa system",
+     
         },
         {
           name: "Galaxy Round Spa",
@@ -135,7 +135,7 @@ export default function ProductsPage() {
         {
           name: "Galaxy Round Spa (Steam-capable)",
           img: "/all_products/Spa_Bathtubs.jpg",
-          link: "/products/galaxy-round-spa-steam",
+          link: "/products/galaxy-round-spa",
         },
         {
           name: "Galaxy Spa Range (All Models)",
@@ -165,7 +165,7 @@ export default function ProductsPage() {
         {
           name: "Galaxy Turbo Series (Steam-capable)",
           img: "/all_products/spa/Galaxy_Utiliti.jpg",
-          link: "/products/galaxy-turbo-series",
+          link: "/products/galaxy-turbo-series-steam",
         },
         {
           name: "Galaxy Ocean Round",
@@ -208,12 +208,12 @@ export default function ProductsPage() {
         {
           name: "Galaxy Lancer Series (Sauna-capable)",
           img: "/all_products/Galaxy_Standard.jpg",
-          link: "/products/galaxy-lancer-serie-sauna",
+          link: "/products/galaxy-lancer-series-sauna",
         },
         {
           name: "Galaxy Maderia",
           img: "/all_products/Massage_Bathtubs/Galaxy_Smart_Round.jpg",
-          link: "/products/galaxy-maderia",
+          link: "/products/galaxy-maderia-sauna",
         },
 
         {

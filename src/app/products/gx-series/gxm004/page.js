@@ -18,7 +18,7 @@ export default function GXM004() {
 
   const product = {
     name: "GXM004",
-    img: "/all_products/pumps/GXM004.jpg", // place image at this path
+    img: "/all_products/Massage_Bathtubs/Galaxy_Lancer.jpg", // place image at this path
     sizes: ["Compact (standard) / Heavy Duty (optional)"],
     material: "Industrial-grade Cast Iron & Stainless Steel",
     color: "Black / Metallic",
@@ -186,7 +186,7 @@ export default function GXM004() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -211,7 +211,7 @@ export default function GXM004() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -237,7 +237,7 @@ export default function GXM004() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

@@ -18,7 +18,7 @@ export default function GalaxyOceanRound() {
 
   const product = {
     name: "Galaxy Ocean Round",
-    img: "/all_products/round/Galaxy_Ocean_Round.jpg",
+    img: "/all_products/Galaxy_Standard.jpg",
 
     sizes: ["1485 mm"],
 
@@ -199,7 +199,7 @@ export default function GalaxyOceanRound() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -224,7 +224,7 @@ export default function GalaxyOceanRound() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -249,7 +249,7 @@ export default function GalaxyOceanRound() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

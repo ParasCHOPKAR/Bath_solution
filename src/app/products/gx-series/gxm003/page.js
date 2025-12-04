@@ -18,7 +18,7 @@ export default function GXM003() {
 
   const product = {
     name: "GXM003",
-    img: "/all_products/shower_panels/GXM003.jpg",
+    img: "/all_products/Spa_Bathtubs.jpg",
 
     sizes: ["Standard Size"],
 
@@ -195,7 +195,7 @@ export default function GXM003() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -220,7 +220,7 @@ export default function GXM003() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>
@@ -246,7 +246,7 @@ export default function GXM003() {
                   fontSize: "15px",
                 }}
               >
-                • {item}
+               {item}
               </li>
             ))}
           </ul>

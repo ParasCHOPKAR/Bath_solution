@@ -200,7 +200,7 @@ export default function GalaxyRegular() {
                     fontSize: "15px",
                   }}
                 >
-                  • {item}
+                 {item}
                 </li>
               ))}
             </ul>
@@ -226,7 +226,7 @@ export default function GalaxyRegular() {
                     fontSize: "15px",
                   }}
                 >
-                  • {item}
+                 {item}
                 </li>
               ))}
             </ul>
@@ -252,7 +252,7 @@ export default function GalaxyRegular() {
                     fontSize: "15px",
                   }}
                 >
-                  • {item}
+                 {item}
                 </li>
               ))}
             </ul>
